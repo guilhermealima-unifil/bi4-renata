@@ -1,15 +1,46 @@
-.hero {
-  padding: 20px;
-
-  h1 {
-    color: orange;
-  }
-
-  p {
-    text-align: justify;
-  }
+body {
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+h1 {
+  color: orange;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+#cobertura {
+  color: pink;
+}
+
+.orangered {
+  color: orangered;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+.mododepreparo {
+  border: 3px dotted palevioletred;
+  padding: 10px 20px 30px;
+}
+
+h1,
+h2,
+h3,
+a,
+p,
+ol,
+ul {
+  margin-left: 10px;
+  font-family: "Inter", sans-serif, Arial, Helvetica;
+}
+
+footer {
+  background-color: rgb(83, 160, 227);
+  color: white;
+  padding: 20px;
+  text-align: center;
 }

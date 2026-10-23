@@ -1,0 +1,153 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: "Cinzel", "Inter", sans-serif;
+  text-align: center;
+  font-size: 64px;
+  color: #001872;
+  text-shadow: 0px 0px 10px rgb(0, 24, 114, 0.6);
+}
+
+header {
+  padding: 20px;
+  text-align: left;
+  margin: 0;
+  border-bottom: solid 1px whitesmoke;
+}
+
+header a {
+  margin-left: 20px;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: #001872;
+  transition: all 0.2s;
+  text-shadow: 2px 2px 5px rgb(0, 24, 114, 0.2);
+}
+
+header a:hover {
+  color: #636800;
+  text-shadow: 2px 2px 5px rgb(99, 104, 0, 0.2);
+}
+
+.introduction {
+  text-align: center;
+  padding-left: 20px;
+  padding-bottom: 100px;
+}
+
+.introduction img {
+  text-align: center;
+  width: 50%;
+}
+
+.introduction a {
+  text-decoration: underline;
+  color: #001872;
+  font-weight: 800;
+}
+
+#principal {
+  background-color: #001872;
+  color: white;
+  padding-inline: 250px;
+  padding-bottom: 75px;
+  border-top: solid 5px #60d7fb;
+}
+
+#principal h2 {
+  color: #60d7fb;
+  font-size: 40px;
+  padding: 40px;
+  padding-left: 0;
+  margin: 0;
+}
+
+#principal .sinopse {
+  font-size: large;
+  margin-bottom: 30px;
+  border: dotted 2px white;
+  padding: 30px;
+  text-align: left;
+}
+
+#principal p {
+  margin: 6px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+ul {
+  text-align: justify;
+  list-style: square;
+  padding: 0;
+}
+
+ol {
+  text-align: justify;
+  list-style: lower-roman;
+  padding: 0;
+}
+
+li {
+  padding: 5px;
+}
+
+.highlights {
+  text-decoration: underline;
+}
+
+.buy {
+  padding-inline: 250px;
+  padding-top: 50px;
+  background-color: black;
+  padding-bottom: 50px;
+}
+
+.buy h2 {
+  color: white;
+  font-size: 32px;
+}
+
+.buy a {
+  color: #fbffb0;
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.buy a strong {
+  padding-left: 10px;
+}
+
+.buy img {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.games {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: black;
+  text-shadow: none;
+}
+
+.catalog {
+  text-align: center;
+}
+
+.catalog img {
+  width: 50%;
+}
+
+.catalog h2 {
+  font-size: 40px;
+  font-family: "Cinzel", "Inter", Arial, Helvetica, sans-serif;
+  color: #001872;
+  text-shadow: 0px 0px 10px rgb(0, 24, 114, 0.6);
+}

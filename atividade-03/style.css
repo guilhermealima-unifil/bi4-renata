@@ -1,78 +1,109 @@
+/* ===== BASE ===== */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  padding: 0;
   margin: 0;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #000814;
+  color: #dfe6f7;
 }
 
 h1 {
-  font-family: "Cinzel", "Inter", sans-serif;
+  font-family: "Cinzel", serif;
   text-align: center;
   font-size: 64px;
-  color: #001872;
-  text-shadow: 0px 0px 10px rgb(0, 24, 114, 0.6);
+  color: #f2f5ff;
+  text-shadow: 0 0 15px rgba(96, 215, 251, 0.6);
 }
 
+/* ===== MENU ===== */
 header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   padding: 20px;
-  text-align: left;
-  margin: 0;
-  border-bottom: solid 1px whitesmoke;
+  background-color: #000814;
+  border-bottom: 1px solid #0a2a8a;
 }
 
 header a {
   margin-left: 20px;
-  padding: 0;
+  color: #dfe6f7;
   text-decoration: none;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  color: #001872;
-  transition: all 0.2s;
-  text-shadow: 2px 2px 5px rgb(0, 24, 114, 0.2);
+  transition: color 0.3s;
 }
 
 header a:hover {
-  color: #636800;
-  text-shadow: 2px 2px 5px rgb(99, 104, 0, 0.2);
+  color: #60d7fb;
 }
 
+/* ===== INTRODUÇÃO ===== */
 .introduction {
   text-align: center;
-  padding-left: 20px;
-  padding-bottom: 100px;
+  padding: 40px 20px 100px;
+  background: radial-gradient(#0a2a8a, #000814);
+}
+
+.introduction h1 {
+  animation: aparecer 1s ease 2s both;
 }
 
 .introduction img {
-  text-align: center;
   width: 50%;
+  border-radius: 12px;
+  transition: transform 0.4s, box-shadow 0.4s;
 }
 
-.introduction a {
-  text-decoration: underline;
-  color: #001872;
-  font-weight: 800;
+.introduction img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 40px rgba(96, 215, 251, 0.6);
 }
 
+.introduction p {
+  margin: 30px 0 20px;
+  font-size: 18px;
+}
+
+.botao {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 1px solid #60d7fb;
+  border-radius: 30px;
+  color: #60d7fb;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.botao:hover {
+  background: #60d7fb;
+  color: #000814;
+}
+
+/* ===== SOBRE ===== */
 #principal {
-  background-color: #001872;
-  color: white;
-  padding-inline: 250px;
-  padding-bottom: 75px;
+  background: linear-gradient(#183258, #10213f 50%, #060c20);
+  padding: 0 250px 75px;
   border-top: solid 5px #60d7fb;
 }
 
 #principal h2 {
+  font-family: "Cinzel", serif;
   color: #60d7fb;
   font-size: 40px;
-  padding: 40px;
-  padding-left: 0;
+  padding: 40px 0;
   margin: 0;
 }
 
 #principal .sinopse {
   font-size: large;
+  line-height: 1.6;
   margin-bottom: 30px;
-  border: dotted 2px white;
   padding: 30px;
-  text-align: left;
+  border: 1px solid #60d7fb;
+  border-radius: 12px;
 }
 
 #principal p {
@@ -85,69 +116,195 @@ h3 {
 }
 
 ul {
-  text-align: justify;
   list-style: square;
   padding: 0;
 }
 
 ol {
-  text-align: justify;
   list-style: lower-roman;
   padding: 0;
 }
 
 li {
   padding: 5px;
+  transition: color 0.3s;
+}
+
+li:hover {
+  color: #60d7fb;
 }
 
 .highlights {
   text-decoration: underline;
 }
 
+/* lista à esquerda e imagem do banco à direita */
+.marcadores {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.cavaleiro-banco {
+  width: 40%;
+  max-width: 350px;
+  border-radius: 16px;
+  /* apaga as bordas da imagem para ela se misturar com o fundo */
+  mask-image: radial-gradient(ellipse, black 60%, transparent 100%);
+  animation: brilhar 3s ease-in-out infinite alternate;
+}
+
+/* ===== COMPRAR ===== */
 .buy {
-  padding-inline: 250px;
-  padding-top: 50px;
+  padding: 50px 250px;
   background-color: black;
-  padding-bottom: 50px;
 }
 
 .buy h2 {
-  color: white;
   font-size: 32px;
 }
 
 .buy a {
   color: #fbffb0;
   font-size: 24px;
-  padding-left: 20px;
-}
-
-.buy a strong {
-  padding-left: 10px;
 }
 
 .buy img {
   margin-top: 20px;
   width: 100%;
+  transition: transform 0.4s;
 }
 
+.buy img:hover {
+  transform: scale(1.02);
+}
+
+/* ===== PÁGINA JOGOS ===== */
 .games {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  color: black;
+  font-family: "Inter", Arial, sans-serif;
   text-shadow: none;
 }
 
+/* jogos lado a lado */
 .catalog {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 40px 60px;
   text-align: center;
 }
 
+.catalog > div {
+  width: 45%;
+}
+
 .catalog img {
-  width: 50%;
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.4s;
+}
+
+.catalog img:hover {
+  transform: scale(1.03);
 }
 
 .catalog h2 {
+  font-family: "Cinzel", serif;
   font-size: 40px;
-  font-family: "Cinzel", "Inter", Arial, Helvetica, sans-serif;
-  color: #001872;
-  text-shadow: 0px 0px 10px rgb(0, 24, 114, 0.6);
+}
+
+/* ===== TELA DE ENTRADA ===== */
+.area-titulo {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cinzel", serif;
+  background: radial-gradient(#001a7a, #000814);
+  pointer-events: none;
+  animation: sumir 2.5s ease forwards;
+}
+
+.area-sub {
+  letter-spacing: 0.4em;
+  color: #9fb4e6;
+  animation: aparecer 1s ease both;
+}
+
+.area-nome {
+  font-size: 64px;
+  font-weight: bold;
+  color: #f2f5ff;
+  text-shadow: 0 0 20px rgba(96, 215, 251, 0.7);
+  animation: aparecer 1s ease 0.2s both;
+}
+
+.area-linha {
+  width: 400px;
+  max-width: 70%;
+  height: 2px;
+  margin: 15px 0;
+  background: linear-gradient(90deg, transparent, white, transparent);
+  animation: abrir 1s ease both;
+}
+
+/* ===== ANIMAÇÕES ===== */
+@keyframes sumir {
+  80% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+@keyframes aparecer {
+  from { opacity: 0; filter: blur(8px); }
+  to { opacity: 1; filter: blur(0); }
+}
+
+@keyframes brilhar {
+  from { filter: drop-shadow(0 0 5px rgba(96, 215, 251, 0.3)); }
+  to { filter: drop-shadow(0 0 25px rgba(96, 215, 251, 0.8)); }
+}
+
+@keyframes abrir {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+/* ===== CELULAR ===== */
+@media (max-width: 768px) {
+  #principal,
+  .buy {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .introduction img {
+    width: 90%;
+  }
+
+  .catalog {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 40px;
+  }
+
+  .catalog > div {
+    width: 100%;
+  }
+
+  .marcadores {
+    flex-direction: column;
+  }
+
+  .cavaleiro-banco {
+    width: 80%;
+  }
+
+  h1,
+  .area-nome {
+    font-size: 40px;
+  }
 }

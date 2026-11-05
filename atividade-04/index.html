@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Atividade 04</title>
+
+    <style>
+      body {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      table {
+        border-spacing: 0;
+        border: solid 0.5px #000;
+      }
+
+      th,
+      td {
+        margin: 0;
+        border: solid 0.5px #000;
+        padding: 5px;
+        padding-inline: 10px;
+        text-align: center;
+        font-family: sans-serif;
+      }
+
+      th {
+        background-color: rgb(255, 105, 60);
+        color: white;
+      }
+
+      caption {
+        font-size: 24px;
+        padding: 10px;
+        font-weight: 900;
+        font-family: "Courier New", Courier, monospace;
+        background-color: rgb(247, 194, 178);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Rotina - Guilherme Alima
+      </caption>
+      <tr>
+        <th></th>
+        <th>DOM</th>
+        <th>SEG</th>
+        <th>TER</th>
+        <th>QUA</th>
+        <th>QUI</th>
+        <th>SEX</th>
+        <th>SAB</th>
+      </tr>
+      <tr>
+        <th>Manhã</th>
+        <td>Descanso / Missa</td>
+        <td colspan="5" rowspan="2">Trabalho</td>
+        <td>Descanso</td>
+      </tr>
+      <tr>
+        <th>Tarde</th>
+        <td>Lazer</td>
+        <td>Grupo de jovens</td>
+      </tr>
+      <tr>
+        <th>Noite</th>
+        <td>Lazer / Missa</td>
+        <td>Faculdade</td>
+        <td>Faculdade</td>
+        <td>Faculdade + Academia</td>
+        <td>Faculdade</td>
+        <td>Lazer / Academia</td>
+        <td>Missa + Rolê / Descanso</td>
+      </tr>
+    </table>
+  </body>
+</html>

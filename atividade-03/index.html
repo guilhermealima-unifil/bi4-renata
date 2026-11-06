@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <title>Atividade 02</title>
+    <title>Atividade 03</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +26,7 @@
       <div class="area-linha"></div>
     </div>
 
-    <!-- Uma barra de navegação -->
+    <!-- Uma barra de navegação (Header) -->
     <header>
       <a href="#">Início</a>
       <a href="jogos.html">Jogos</a>
@@ -49,9 +49,7 @@
           >
         </p>
 
-        <a class="botao" href="#principal"
-          >Ver sobre ↓</a
-        >
+        <a class="botao" href="#principal">Ver sobre ↓</a>
       </section>
 
       <!-- Seção Principal -->
@@ -83,33 +81,33 @@
           <h3>Marcadores na plataforma Steam:</h3>
 
           <div class="marcadores">
-          <ul>
-            <li class="highlights">Metroidvania</li>
-            <li class="highlights">Plataforma</li>
-            <li class="highlights">Soulslike</li>
-            <li class="highlights">Impiedoso</li>
-            <li class="highlights">2D</li>
-            <li>Indie</li>
-            <li>Um Jogador</li>
-            <li>Exploração</li>
-            <li>Atmosférico</li>
-            <li>Aventura</li>
-            <li>Boa Trama</li>
-            <li>Desenhado à Mão</li>
-            <li>Vários Finais</li>
-            <li>Ação</li>
-            <li>Fantasia Sombria</li>
-            <li>Mundo Aberto</li>
-            <li>Fofo</li>
-            <li>Controle</li>
-            <li>Câmera Lateral</li>
-          </ul>
+            <ul>
+              <li class="highlights">Metroidvania</li>
+              <li class="highlights">Plataforma</li>
+              <li class="highlights">Soulslike</li>
+              <li class="highlights">Impiedoso</li>
+              <li class="highlights">2D</li>
+              <li>Indie</li>
+              <li>Um Jogador</li>
+              <li>Exploração</li>
+              <li>Atmosférico</li>
+              <li>Aventura</li>
+              <li>Boa Trama</li>
+              <li>Desenhado à Mão</li>
+              <li>Vários Finais</li>
+              <li>Ação</li>
+              <li>Fantasia Sombria</li>
+              <li>Mundo Aberto</li>
+              <li>Fofo</li>
+              <li>Controle</li>
+              <li>Câmera Lateral</li>
+            </ul>
 
-          <img
-            class="cavaleiro-banco"
-            src="cavaleiro-banco.png"
-            alt="O Cavaleiro sentado em um banco"
-          />
+            <img
+              class="cavaleiro-banco"
+              src="cavaleiro-banco.png"
+              alt="O Cavaleiro sentado em um banco"
+            />
           </div>
 
           <h3>Requisitos mínimos:</h3>
@@ -130,19 +128,286 @@
 
       <!-- Seção para baixar o jogo -->
       <section class="buy">
-        <h2>Compre o jogo na plataforma Steam:</h2>
-
         <a
           href="https://store.steampowered.com/app/367520/Hollow_Knight/"
           target="_blank"
+          class="buy-banner"
         >
-          <strong>> Acesse aqui.</strong>
-          <br />
           <img
             src="hollow-banner.avif"
             alt="Imagem de quatro personagens do Hollow knight"
           />
         </a>
+
+        <h2>Compre o jogo na plataforma Steam:</h2>
+
+        <a
+          href="https://store.steampowered.com/app/367520/Hollow_Knight/"
+          target="_blank"
+          class="steam-button"
+        >
+          <img src="steam-logo.webp" />
+          Veja aqui
+        </a>
+      </section>
+
+      <!-- Seções Extra -->
+      <section class="extra">
+        <div>
+          <h2>Extra</h2>
+
+          <img
+            src="hollow-knight-warning.png"
+            alt="Imagem do cavaleiro vazio pulando"
+          />
+
+          <p class="extra-atention">Atenção!</p>
+          <p>As seções seguintes podem apresentar spoilers do jogo.</p>
+        </div>
+      </section>
+
+      <!-- Seções Extra: Bosses -->
+      <section class="bosses">
+        <h2>Chefões do jogo</h2>
+
+        <div class="bosses-grid">
+          <div class="bosses-card">
+            <h3>Batedor Musgoso Imenso</h3>
+            <img
+              src="bosses/Massive_Moss_Charger_Icon.webp"
+              alt="Imagem do Boss Batedor Musgoso Imenso"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Cavaleiro da Colmeia</h3>
+            <img
+              src="bosses/Hive_Knight_Icon.webp"
+              alt="Imagem do Boss Cavaleiro da Colmeia"
+            />
+            <p class="dlc-boss lifeblood">DLC</p>
+          </div>
+          <div class="bosses-card">
+            <h3>Cavaleiro Sentinela</h3>
+            <img
+              src="bosses/Watcher_Knight_Icon.webp"
+              alt="Imagem do Boss Cavaleiro Sentinela"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Cavaleiro Vazio</h3>
+            <img
+              src="bosses/The_Hollow_Knight_Icon.webp"
+              alt="Imagem do Boss Cavaleiro Vazio"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>O Colecionador</h3>
+            <img
+              src="bosses/The_Collector_Icon.webp"
+              alt="Imagem do Boss O Colecionador"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Defensor do Esterco</h3>
+            <img
+              src="bosses/Dung_Defender_Icon.webp"
+              alt="Imagem do Boss Defensor do Esterco"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Domador de Deuses</h3>
+            <img
+              src="bosses/God_Tamer_Icon.webp"
+              alt="Imagem do Boss Domador de Deuses"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Falso Cavaleiro</h3>
+            <img
+              src="bosses/False_Knight_Icon.webp"
+              alt="Imagem do Boss Falso Cavaleiro"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Flukemarm</h3>
+            <img
+              src="bosses/Flukemarm_Icon.webp"
+              alt="Imagem do Boss Flukemarm"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Grande Sábio do Ferrão Sly</h3>
+            <img
+              src="bosses/Great_Nailsage_Sly_Icon.webp"
+              alt="Imagem do Boss Grande Sábio do Ferrão Sly"
+            />
+            <p class="dlc-boss gods">DLC</p>
+          </div>
+          <div class="bosses-card">
+            <h3>Grimm</h3>
+            <img
+              src="bosses/Troupe_Master_Grimm_Icon.webp"
+              alt="Imagem do Boss Grimm"
+            />
+            <p class="dlc-boss grimm">DLC</p>
+          </div>
+          <div class="bosses-card">
+            <h3>Guardião Cristalizado</h3>
+            <img
+              src="bosses/Crystal_Guardian_Icon.webp"
+              alt="Imagem do Boss Guardião Cristalizado"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Guerreiro das Almas</h3>
+            <img
+              src="bosses/Soul_Warrior_Icon.webp"
+              alt="Imagem do Boss Guerreiro das Almas"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Hornet Protetora</h3>
+            <img
+              src="bosses/Hornet_Protector_Icon.webp"
+              alt="Imagem do Boss Hornet Protetora"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Irmãos Oro & Mato</h3>
+            <img
+              src="bosses/Brothers_Oro_Mato_Icon.webp"
+              alt="Imagem dos Bosses Irmãos Oro e Mato"
+            />
+            <p class="dlc-boss gods">DLC</p>
+          </div>
+          <div class="bosses-card">
+            <h3>Lordes Louva-a-Deus</h3>
+            <img
+              src="bosses/Mantis_Lords_Icon.webp"
+              alt="Imagem do Boss Lordes Louva-a-Deus"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Lorde Traidor</h3>
+            <img
+              src="bosses/Traitor_Lord_Icon.webp"
+              alt="Imagem do Boss Lorde Traidor"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Mãe Mosca</h3>
+            <img
+              src="bosses/Gruz_Mother_Icon.webp"
+              alt="Imagem do Boss Mãe Mosca"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Mawlek Incubador</h3>
+            <img
+              src="bosses/Brooding_Mawlek_Icon.webp"
+              alt="Imagem do Boss Mawlek Incubador"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Mestre da Pintura Sheo</h3>
+            <img
+              src="bosses/Paintmaster_Sheo_Icon.webp"
+              alt="Imagem do Boss Mestre da Pintura Sheo"
+            />
+            <p class="dlc-boss gods">DLC</p>
+          </div>
+          <div class="bosses-card">
+            <h3>Mestre das Almas</h3>
+            <img
+              src="bosses/Soul_Master_Icon.webp"
+              alt="Imagem do Boss Mestre das Almas"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Nosk</h3>
+            <img src="bosses/Nosk_Icon.webp" alt="Imagem do Boss Nosk" />
+          </div>
+          <div class="bosses-card">
+            <h3>Oblobbles</h3>
+            <img
+              src="bosses/Oblobble_Icon.webp"
+              alt="Imagem do Boss Oblobbles"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Radiância</h3>
+            <img
+              src="bosses/Radiance_Icon.webp"
+              alt="Imagem do Boss Radiância"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Receptáculo Quebrado</h3>
+            <img
+              src="bosses/Broken_Vessel_Icon.webp"
+              alt="Imagem do Boss Receptáculo Quebrado"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Rei Vengemosca</h3>
+            <img
+              src="bosses/Vengefly_King_Icon.webp"
+              alt="Imagem do Boss Rei Vengemosca"
+            />
+          </div>
+          <div class="bosses-card">
+            <h3>Uumuu</h3>
+            <img src="bosses/Uumuu_Icon.webp" alt="Imagem do Boss Uumuu" />
+          </div>
+          <div class="bosses-card">
+            <h3>Zote</h3>
+            <img src="bosses/Zote_Circle-2.webp" alt="Imagem do Boss Zote" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Seções Extra: SilkSong -->
+      <section class="silksong">
+        <div class="silk-title">
+          <h3>Hollow Knight</h3>
+          <h2>SilksonG</h2>
+        </div>
+
+        <div class="silk-card">
+          <img src="silk-song.jpg" />
+          <h4>
+            Veja mais de Hollow Knight com sua sequência:
+            <a
+              href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/"
+              target="_blank"
+              >Hollow Knight Silksong</a
+            >
+          </h4>
+
+          <p>
+            Como a letal caçadora Hornet, aventure-se por um reino governado
+            pela seda e por canções! Capturada e levada para um mundo
+            desconhecido, prepare-se para enfrentar inimigos poderosos e
+            desvendar mistérios antigos enquanto ascende em uma perigosa
+            peregrinação até o pico do reino.
+          </p>
+
+          <p>
+            Hollow Knight: Silksong é a épica continuação de Hollow Knight, o
+            premiado jogo de ação e aventura. Explore novos territórios,
+            descubra novos poderes, combata vastas hordas de insetos e feras e
+            revele segredos antigos ligados à sua natureza e ao seu passado.
+          </p>
+
+          <a
+            href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/"
+            target="_blank"
+            class="steam-button"
+          >
+            <img src="steam-logo.webp" />
+            Veja aqui
+          </a>
+        </div>
       </section>
     </main>
   </body>

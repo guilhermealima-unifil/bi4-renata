@@ -1,0 +1,285 @@
+<!-- Aluno: Guilherme Murakami Alima -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 05</title>
+    <!-- Estilização pelo HTML -->
+    <!-- As labels e os inputs / selects / textareas 
+     estão juntos em um div-input, pra facilitar a estilização -->
+    <style>
+      /* CSS da Atividade */
+      section {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        padding: 40px;
+        background-color: #fffaff;
+      }
+
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #d8315b;
+      }
+
+      form {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 550px;
+      }
+
+      .line {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+      }
+
+      .div-input {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        gap: 5px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .div-input input {
+        padding: 8px;
+        padding-left: 10px;
+        border-radius: 10px;
+        outline: solid 0px;
+        border: solid 2px #000;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #fffaff;
+        border: solid 2px #0a2463;
+      }
+
+      .div-input input:focus {
+        border: solid 2px #3e92cc;
+      }
+
+      .div-input select {
+        padding: 8px;
+        padding-left: 10px;
+        border-radius: 10px;
+        outline: solid 0px;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #fffaff;
+        border: solid 2px #0a2463;
+      }
+
+      .div-input select:focus {
+        border: solid 2px #3e92cc;
+      }
+
+      .radio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      .radio .div-input {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+      }
+
+      .checkbox {
+        display: flex;
+        flex-flow: row wrap;
+        row-gap: 10px;
+      }
+
+      .checkbox p {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+
+      .checkbox .line {
+        justify-content: space-between;
+      }
+
+      .checkbox .div-input {
+        width: auto;
+        flex-flow: row;
+      }
+
+      .checkbox .div-input input {
+        width: 12px;
+      }
+
+      #comentario {
+        width: 100%;
+        height: 150px;
+        resize: none;
+        border-radius: 20px;
+        padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        box-sizing: border-box;
+        background-color: #fffaff;
+        outline: solid 2px #0a2463;
+        border: none;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      #comentario:focus {
+        outline: solid 2px #3e92cc;
+        border: none;
+      }
+
+      button {
+        padding: 10px;
+        padding-inline: 25px;
+        border-radius: 20px;
+        border: solid 2px #000;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        border: solid 2px #0a2463;
+        background-color: #3e92cc;
+        color: #fffaff;
+        transition: all 0.2s;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Atividade 05</h1>
+      <form>
+        <div class="div-input">
+          <label for="name">Nome:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Insira seu Nome"
+          />
+        </div>
+        <div class="div-input">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="exemplo@gmail.com"
+          />
+        </div>
+        <div class="line">
+          <div class="div-input">
+            <label for="password">Senha:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Insira sua senha"
+            />
+          </div>
+          <div class="div-input">
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" />
+          </div>
+        </div>
+        <div class="div-input">
+          <label for="curso">Curso:</label>
+          <select name="curso" id="curso">
+            <option disabled selected>Escolha um curso</option>
+            <option value="ENSW">Engenharia de Software</option>
+            <option value="CC">Ciência da Computação</option>
+            <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+            <option value="OTHER">Outro</option>
+          </select>
+        </div>
+        <div class="radio">
+          <p>Sexo:</p>
+          <div class="div-input">
+            <input type="radio" id="masculino" name="sexo" />
+            <label for="masculino">Masculino</label>
+          </div>
+          <div class="div-input">
+            <input type="radio" id="feminino" name="sexo" />
+            <label for="feminino">Feminino</label>
+          </div>
+        </div>
+
+        <div class="checkbox">
+          <p>Interesses:</p>
+          <div class="line">
+            <div class="div-input">
+              <input type="checkbox" id="ia" name="interests" />
+              <label for="ia">Inteligência Artificial</label>
+            </div>
+            <div class="div-input">
+              <input type="checkbox" id="data-cience" name="interests" />
+              <label for="data-cience">Ciência de dados</label>
+            </div>
+            <div class="div-input">
+              <input type="checkbox" id="mobile" name="interests" />
+              <label for="mobile">Aplicações Mobile</label>
+            </div>
+          </div>
+
+          <div class="line">
+            <div class="div-input">
+              <input type="checkbox" id="web" name="interests" />
+              <label for="web">Desenvolvimento Web</label>
+            </div>
+            <div class="div-input">
+              <input type="checkbox" id="devops" name="interests" />
+              <label for="devops">DevOps e Cloud</label>
+            </div>
+            <div class="div-input">
+              <input type="checkbox" id="pm" name="interests" />
+              <label for="pm">Gestão de Projetos</label>
+            </div>
+          </div>
+        </div>
+        <div class="div-input">
+          <label for="comentario">Comentários:</label>
+          <textarea
+            id="comentario"
+            name="comentario"
+            placeholder="Escreva seu comentário"
+          ></textarea>
+        </div>
+        <div class="div-input">
+          <label for="foto">Foto:</label>
+          <input
+            type="file"
+            id="foto"
+            name="foto"
+            accept="image/png, image/jpeg"
+          />
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </body>
+</html>
